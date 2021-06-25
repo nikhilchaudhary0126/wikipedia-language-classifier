@@ -1,5 +1,6 @@
 from conf import ROOT_DIR as rd
 
+
 def accuracy(inputFile: str) -> None:
     data = []
     with open(inputFile, 'r', encoding="utf-8") as input:
@@ -24,4 +25,5 @@ def accuracy(inputFile: str) -> None:
     per = ((len(data) - falsecount) / len(data)) * 100
     print(per)
 
-accuracy(rd+'/dtresult.txt')
+
+accuracy(rd + '/dtresult.txt')
